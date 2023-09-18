@@ -84,4 +84,4 @@ To stop docker container
 ```
 docker stop <container_id>
 ```
-App deployed on Heroku Platform
+App deployed on Heroku Platform. We can check it on heroku platform.
