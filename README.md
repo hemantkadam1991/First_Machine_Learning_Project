@@ -89,3 +89,8 @@ App deployed on Heroku Platform. We can check it on heroku platform.
 ```
 python setup.py install
 ```
+
+Install ipykernel
+```
+pip install ipykernel
+```
