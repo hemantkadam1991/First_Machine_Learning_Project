@@ -87,7 +87,7 @@ class DataIngestion:
             strat_train_set = None
             strat_test_set = None 
 
-            split = StratifiedShuffleSplit(n_split=1, test_size=0.2, random_state=42)
+            split = StratifiedShuffleSplit(n_splits=1, test_size=0.2, random_state=42)
 
             for train_index,test_index in split.split(housing_data_frame, housing_data_frame["income_cat"]):
                 strat_train_set = housing_data_frame.loc[train_index].drop(["income_cat"], axis=1)
@@ -97,8 +97,9 @@ class DataIngestion:
 
             test_file_path = os.path.join(self.data_ingestion_config.ingested_test_dir, file_name)
 
+
             if strat_train_set is not None:
-                os.makedirs(self.data_ingestion_config.ingested_train_dir,exists_ok=True)
+                os.makedirs(self.data_ingestion_config.ingested_train_dir,exist_ok=True)
                 logging.info(f"Exporting training dataset to file: [{train_file_path}]")
                 strat_train_set.to_csv(train_file_path, index=False)
             
