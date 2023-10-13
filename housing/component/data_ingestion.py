@@ -7,8 +7,9 @@ import tarfile
 from six.moves import urllib 
 import pandas as pd 
 import numpy as np 
-# from sklearn.model_selection import StratifiedShuffleSplit
-from scikit-learn.model_selection import StratifiedShuffleSplit 
+from sklearn.model_selection import StratifiedShuffleSplit
+#import scikitlearn as sklearn 
+#from sklearn.model_selection import StratifiedShuffleSplit 
 
 
 

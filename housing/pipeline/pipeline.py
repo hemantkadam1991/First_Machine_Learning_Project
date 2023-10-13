@@ -4,12 +4,12 @@ from housing.exception import HousingException
 
 from housing.entity.artifact_entity import DataIngestionArtifact
 from housing.entity.config_entity import DataIngestionConfig
-from housing.component.start_data_ingestion import DataIngestion 
+from housing.component.data_ingestion import DataIngestion 
 import os,sys 
 
 class Pipeline:
 
-    def __init__(self,config: Configuration = Configuration())- > None:
+    def __init__(self,config: Configuration = Configuration()) -> None:
         try:
             self.config=config
 
