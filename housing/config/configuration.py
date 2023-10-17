@@ -137,7 +137,7 @@ class Configuration:
                 data_transformation_config_info[DATA_TRANSFORMATION_TEST_DIR_NAME_KEY]
             )
 
-            return data_transformation_config = DataTransformtionConfig(
+            data_transformation_config = DataTransformtionConfig(
                 add_bedroom_per_room = add_bedroom_per_room,
                 preprocessed_object_file_path = preprocessed_object_file_path,
                 transformed_train_dir = transformed_train_dir,
@@ -146,8 +146,10 @@ class Configuration:
 
             logging.info(f"Data transformation config: {data_transformation_config}")
 
+            return data_transformation_config
+
         except Exception as e:
-            rais HousingException(e,sys) from e
+            raise HousingException(e,sys) from e
             
     
     def get_model_trainer_config(self) ->ModelTrainerConfig:

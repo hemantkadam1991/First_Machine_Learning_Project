@@ -45,7 +45,6 @@ DATA_TRANSFORMATION_TEST_DIR_NAME_KEY = "transformed_test_dir"
 DATA_TRANSFORMATION_PREPROCESSING_DIR_KEY = "preprocessing_dir"
 DATA_TRANSFORMATION_PREPROCESSED_FILE_NAME_KEY = "preprocessed_object_file_name"
 
-
 COLUMN_TOTAL_ROOMS = "total_rooms"
 COLUMN_POPULATION = "population"
 COLUMN_HOUSEHOLDS = "households"
